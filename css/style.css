@@ -1623,6 +1623,9 @@ picture {
   ._md4dn {
     display: none !important;
   }
+  .recipe__button {
+    font-size: 15px;
+  }
 }
 
 @media (any-hover: hover) {
