@@ -1625,6 +1625,7 @@ picture {
   }
   .recipe__button {
     font-size: 15px;
+    padding: 1rem;
   }
 }
 
