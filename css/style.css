@@ -1313,18 +1313,6 @@ picture {
   }
 }
 
-@supports (padding-bottom: clamp( 0.0000000625rem , -2.6472929172rem  +  12.1019107643vw , 11.875rem )) {
-  .recipe {
-    padding-bottom: clamp( 0.0000000625rem , -2.6472929172rem  +  12.1019107643vw , 11.875rem );
-  }
-}
-
-@supports not (padding-bottom: clamp( 0.0000000625rem , -2.6472929172rem  +  12.1019107643vw , 11.875rem )) {
-  .recipe {
-    padding-bottom: calc(0.0000000625rem + 11.8749999375 * (100vw - 21.875rem) / 98.125);
-  }
-}
-
 .recipe__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1475,12 +1463,14 @@ picture {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  pointer-events: none;
 }
 
 .panel-open .rpanel._active {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
+  pointer-events: all;
 }
 
 .rpanel__close {
